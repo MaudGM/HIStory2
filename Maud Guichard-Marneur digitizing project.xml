@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>HIStory : An electronic transcription</title>
+            <!-- In the final project, I would like to anonymise the author of the letters with consideration to ethics. With Mats I discussed the possibility to slightly blurr the name in the facsimile. I would like to have a diplomatic witness, but when the name comes up, I would like to show that I obliterate the info. How could I do that? -->
+            <principal>
+               <forename>Maud</forename>
+               <surname>Guichard-Marneur</surname>
+            </principal>
+            <respStmt>
+               <resp>Selected, transcribed and Encoded by </resp>
+               <persName>
+                  <forename>Maud</forename>
+                  <surname>Guichard-Marneur</surname>
+               </persName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>
+               <forename>Maud</forename>
+               <surname>Guichard-Marneur</surname></authority>
+            <pubPlace>
+               <address>
+                  <street>Gamla Björlandavägen 164</street>
+                  <settlement>Göteborg</settlement>
+                  <postCode>41728</postCode>
+                  <country>Sweden</country>
+               </address>
+               <affiliation>University of Borås, Sweden</affiliation>
+               <date when="2022-05-05">5 May 2022</date>
+            </pubPlace>
+            <availability>
+               <p>These files are made available for public interest, including scientific and
+                  historical research, in accordance with GDPR Chap.9, art.89 on safeguards and
+                  derogations for archiving purposes. The high-resolution files may only be
+                  communicated by contacting the responsible authority of the present digital
+                  transcription. </p>
+            </availability>
+         </publicationStmt>
+         <notesStmt>
+            <note>The present transcription is undertaken as part of a potentially wider digitizing
+               project initiated as part of the course on digitizing cultural heritage, Master in
+               library and information science, digital libraries and information services, at the
+               University of Borås. </note>
+         </notesStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Personal letters, printed material and course notes from a rescued
+                     personnal archive in possession of the instigator of the present digital
+                     transcription </repository>
+               </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc material="paper">
+                        <extent> Three hand-written letters <dimensions scope="all" type="leaf"
+                              unit="cm">
+                              <height>21</height>
+                              <width>14,7</width>
+                           </dimensions> one hand written letter <dimensions scope="all" type="leaf"
+                              unit="cm">
+                              <height>29,7</height>
+                              <width>21</width>
+                           </dimensions>and one printed letter <dimensions scope="all" type="leaf"
+                              unit="cm">
+                              <height>29,7</height>
+                              <width>21</width>
+                           </dimensions></extent>
+
+                        <collation>Great care has been given to preserve the order in which
+                           documents were bundled together, often in folders with titles. The draft
+                           letters written in pencil as well as the printed letter to Maréchal
+                           Pétain on the occasion of his birthday were grouped together and are all
+                           from the same time period (1941) when the priest was prisoner of war in
+                           Germany during WWII. </collation>
+                        <condition>
+                           <p> The selected items in the archive are in relative good condition
+                              considering the poor storage condition they have been in. Two letters
+                              certainly come from the same notebook with ruled papper. Each sheet
+                              was detached from it. The paper sheets are intact but yellowed with
+                              time and slighly stained. One A4 letter has been preserved folded and
+                              is nearly split at the folding crease rendering one written line
+                              barely legible.</p>
+                        </condition>
+                     </supportDesc>
+                  </objectDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>This is a sample of a potentially larger digitizing project that aims at creating a
+               research portal where personal archives become the main point of entry for a more
+               human-centred history where individual trajectories intersect with political and
+               historical events as well as institutions. The project starting point is the display
+               of archive material that belonged to one individual, a French priest who was educated
+               in the 30s in France, became a war prisoner during WWII and later an advocate for
+               freedom of (religious) education. There are many points of (research) interest that
+               are raised through one personal archive. Indeed, each archival item acquires its full
+               meaning in the context of its own archive. In the case of the French priest archive,
+               it is absolutely fascinating to look at the seminar notes and course booklets to
+               deepen our understanding of religious, Catholic, education in France in the 1930s.
+               Likewise, the material saved over time by one priest reveals an intersting trajectory
+               when thinking about the Church position during WWII with regard to Nazi Germany and
+               Vichy France. In the case of the priest's personal archive, it is interesting to note
+               that Vichy France aligned publications from the early years of WWII had been
+               preserved by the priest. Towards, the end of the war and soon after the war, another
+               type of material had been considered worthy of keeping. For example, the archive
+               contains a German newspaper published in May 1945 that showed in its front page
+               striking photos of victims and survisvors at concentration camps. These choices are
+               in themselves meaningful. The personal archive also holds a rare catalogue of the
+               exhibition "Hitlerian crimes" that was held at the Grand Palais in Paris in the
+               summer 1945. Hence the individual documents, as well as the personal archive as a
+               whole offer great research potential about the following themes, but not exclusively:
+               Religious catholic education, war prisonners, WWII, the Church establishment, history
+               of mentality and Vichy France. </p>
+         </projectDesc>
+         <samplingDecl>
+            <p>The whole archive in my possession is indeed only a sample of the priest's archive.
+               The archive material that I rescued in 2003 from what was sent for garbage collection
+               outside the Clarisse Convent, rue de Briseux, in Rennes, is only a sample collected
+               at random. Indeed there were many more boxes, many of them had been already
+               contaminated by dog urine. I rescued what seemed the most interesting in a few minute
+               timeframe. What had originally attacted my eye was the Vichy France publications and
+               the seminar notes from the 1930s. Soon after I started going through the few boxes I
+               had collected with the aim of indexing the material, but lack of time stopped me in
+               my endeavour. In 2022, I finally got an opportunity to get back to this archive that
+               had been stored in France. A pre-selection was brought to Sweden where I started to
+               read and research the documents. For the digitization project I sampled and digitised
+               a few, considered most interesting and/or striking documents from three different
+               periods of the priest's life: the 1930s, WWII and post WWII. However, for online
+               presentation I focused on marking up selected WWII letters that I present here</p>
+         </samplingDecl>
+         <editorialDecl>
+            <normalization>
+               <p>The abbreviation for 'numéro' includes an 'o' in superscript that has not been
+                  rendered in the transcription. </p>
+            </normalization>
+            <hyphenation>
+               <p>The hyphenation has been faithfully transcribed and the line breaks rendered in
+                  the transcription</p>
+            </hyphenation>
+            <quotation>
+               <p> References to text from newspaper articles have been transcribed as TEI quote
+                  with a rendition 'quote' </p>
+            </quotation>
+            <segmentation>
+               <p>The transcription is organised to correspond to the way the text is divided on
+                  each page of each facsimile.</p>
+            </segmentation>
+         </editorialDecl>
+      </encodingDesc>
+      <profileDesc>
+
+         <handNotes>
+            <handNote xml:id="JJ">Written by Joseph Jouzel</handNote>
+         </handNotes>
+         <langUsage>
+            <language ident="fr">French</language>
+            <language ident="de">German</language>
+         </langUsage>
+         <particDesc>
+            <listPerson>
+               <person xml:id="personJJ">
+                  <persName>
+                     <forename>Joseph</forename>
+                     <surname>Jouzel</surname>
+                  </persName>
+               </person>
+               <person xml:id="personCommandant">
+                  <name>Commandant de l'Offlag XIII A</name>
+               </person>
+               <person xml:id="personScapini">
+                  <name><ref target="https://francearchives.fr/fr/authorityrecord/FRAN_NP_051226"
+                        >Scapini</ref></name>
+               </person>
+            </listPerson>
+            <listOrg>
+               <org xml:id="TU">
+                  <orgName xml:lang="fr"><ref target="https://data.bnf.fr/ark:/12148/cb32879084h"
+                        >Trait d'Union</ref></orgName>
+
+               </org>
+               <org xml:id="PS">
+                  <orgName xml:lang="fr"><ref target="https://data.bnf.fr/ark:/12148/cb34519208g"
+                        >Paris-Soir</ref></orgName>
+               </org>
+               <org xml:id="FS">
+                  <orgName xml:lang="de"><ref
+                        target="https://fr.wikipedia.org/w/index.php?title=Frontstalag&amp;oldid=187127738"
+                        >Frontstsalag</ref></orgName>
+               </org>
+               <org xml:id="AK">
+                  <orgName xml:lang="de">Arbeitskommando</orgName>
+               </org>
+               <org xml:id="ST">
+                  <orgName xml:lang="de"><ref
+                        target="https://www.americanairmuseum.com/place/226952">Stalag XIII
+                     B</ref></orgName>
+               </org>
+               <org xml:id="OF">
+                  <orgName xml:lang="de"><ref
+                        target="https://en.wikipedia.org/w/index.php?title=Oflag_XIII-A&amp;oldid=1079979451"
+                     /></orgName>
+               </org>
+            </listOrg>
+         </particDesc>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface xml:id="DSCF8374">
+         <figure>
+            <label>Draft letter dated March 20 1941 (recto)</label>
+            <figDesc> Recto of a draft letter, dated 20 March 1941, in which the priest reports on
+               his different assignments and locations since he was made prisoner of war on 17 June
+               1940. The letter to the Kommandatur aims to request payment for his work as
+               nurse.</figDesc>
+            <graphic xml:id="DSCF8374_object" url="DSCF8374.tiff"/>
+            <graphic xml:id="DSCF8374crop_full" url="DSCF8374crop.png"/>
+            <graphic xml:id="DSCF8374crop_thumb" url="DSCF8374crop_thumb.jpeg"/>
+         </figure>
+      </surface>
+   </facsimile>
+   <facsimile>
+      <surface xml:id="DSCF8375">
+         <figure>
+            <label>Draft letter dated March 20 1941 (verso)</label>
+            <figDesc> Verso of a draft letter, dated 20 March 1941, in which the priest reports on
+               his different assignments and locations since he was made prisoner of war on 17 June
+               1940. The letter to the Kommandatur aims to request payment for his work as
+               nurse.</figDesc>
+            <graphic xml:id="DSCF8375_object" url="DSCF8375.tiff"/>
+            <graphic xml:id="DSCF8375crop_full" url="DSCF8375crop.png"/>
+            <graphic xml:id="DSCF8375crop_thumb" url="DSCF8375crop_thumb.jpeg"/>
+         </figure>
+      </surface>
+   </facsimile>
+   <facsimile>
+      <surface xml:id="DSCF8370-1">
+         <figure>
+            <label>Draft letter dated 30 April 1941 with an excerpt from the newspaper Trait d'Union
+               (Recto)</label>
+            <figDesc>Recto of a draft letter, citing an excerpt from the newspaper Trait d'Union,
+               adressed to the Kommandatur and seeking release from the war prisoner camp. </figDesc>
+            <graphic xml:id="DSCF8370-1_object" url="DSCF8310-1.tiff"/>
+            <graphic xml:id="DSCF8370-1crop_full" url="DSCF8370-1crop.png"/>
+            <graphic xml:id="DSCF8370-1crop_thumb" url="DSCF8370-1crop_thumb.jpeg"/>
+         </figure>
+      </surface>
+   </facsimile>
+   <facsimile>
+      <surface xml:id="DSCF8371">
+         <figure>
+            <label>Draft letter dated 30 April 1941 with an excerpt from the newspaper Trait d'Union
+               (Verso)</label>
+            <figDesc>Verso of a draft letter, citing an excerpt from the newspaper Trait d'Union,
+               adressed to the Kommandatur and seeking release from the war prisoner camp. </figDesc>
+            <graphic xml:id="DSCF8371_object" url="DSCF8371.tiff"/>
+            <graphic xml:id="DSCF8371crop_full" url="DSCF8371crop.png"/>
+            <graphic xml:id="DSCF8371crop_thumb" url="DSCF8371crop_thumb.jpeg"/>
+         </figure>
+      </surface>
+   </facsimile>
+   <facsimile>
+      <surface xml:id="DSCF8366-1">
+         <figure>
+            <label>Draft letter dated 30 April 1941 referring to an excerpt of Paris-Soir
+               (Recto)</label>
+            <figDesc> Recto of a draft letter,dated 30 April 1941, citing an excerpt from the
+               newspaper Paris-Soir, addressed to the Kommandatur and seeking release from the war
+               prisoner camp. </figDesc>
+            <graphic xml:id="DSCF8366-1_object" url="DSCF8366-1.tiff"/>
+            <graphic xml:id="DSCF8366-1crop_full" url="DSCF8366-1crop.png"/>
+            <graphic xml:id="DSCF8366-1crop_thumb" url="DSCF8366-1crop_thumb.jpeg"/>
+         </figure>
+      </surface>
+   </facsimile>
+   <facsimile>
+      <surface xml:id="DSCF8367">
+         <figure>
+            <label>Draft letter dated 30 April 1941 referring to an excerpt of Paris-Soir
+               (Verso)</label>
+            <figDesc>Verso of a draft letter, dated 30 April 1941, citing an excerpt from the
+               newspaper Paris-Soir, addressed to the Kommandatur and seeking release from the war
+               prisoner camp. </figDesc>
+            <graphic xml:id="DSCF8367_object" url="DSCF8367.tiff"/>
+            <graphic xml:id="DSCF8367crop_full" url="DSCF8367crop.png"/>
+            <graphic xml:id="DSCF8367crop_thumb" url="DSCF8367crop_thumb.jpeg"/>
+         </figure>
+      </surface>
+   </facsimile>
+   <facsimile>
+      <surface xml:id="DSCF8383">
+         <figure>
+            <label>Draft letter dated 30 April 1941 referring to an excerpt of Trait d'Union in the
+               body of the letter (Recto)</label>
+            <figDesc> Recto of a draft letter, dated 30 April 1941, citing in the body of the letter
+               an excerpt from the newspaper Trait d'Union, addressed to the Kommandatur and seeking
+               release from the war prisoner camp.</figDesc>
+            <graphic xml:id="DSCF8383_object" url="DSCF8383.tiff"/>
+            <graphic xml:id="DSCF8383crop_full" url="DSCF8383crop.png"/>
+            <graphic xml:id="DSCF8383crop_thumb" url="DSCF8383crop_thumb.jpeg"/>
+         </figure>
+      </surface>
+   </facsimile>
+   <facsimile>
+      <surface xml:id="DSCF8384">
+         <figure>
+            <label> Draft letter dated 30 April 1941 referring to an excerpt of Trait d'Union in the
+               body of the letter (Verso)</label>
+            <figDesc> Verso of a draft letter, dated 30 April 1941, citing in the body of the letter
+               an excerpt of the newspaper Trait d'Union, addressed to the Kommandatur and seeking
+               release from the war prisoner camp.</figDesc>
+            <graphic xml:id="DSCF8384_object" url="DSCF8384.tiff"/>
+            <graphic xml:id="DSCF8384crop_full" url="DSCF8384crop.png"/>
+            <graphic xml:id="DSCF8384crop_thumb" url="DSCF8384crop_thumb.jpeg"/>
+         </figure>
+      </surface>
+   </facsimile>
+   <facsimile>
+      <surface xml:id="DSCF8350">
+         <figure>
+            <label> Printed letter to wish Maréchal Pétain a happy birthday (recto)</label>
+            <figDesc> Recto of a printed letter, addressed to Maréchal Pétain on his birthday, from
+               the war prisoners of the Oflag XIII A. Unsigned copy. </figDesc>
+            <graphic xml:id="DSCF8350_object" url="DSCF8350.tiff"/>
+            <graphic xml:id="DSCF8350crop_full" url="DSCF8350crop.png"/>
+            <graphic xml:id="DSCF8350crop_thumb" url="DSCF8350_thumb.jpeg"/>
+         </figure>
+      </surface>
+   </facsimile>
+   <facsimile>
+      <surface xml:id="DSCF8351">
+         <figure>
+            <label>Printed letter to wish Maréchal Pétain a happy birthday (verso)</label>
+            <figDesc> Verso of a printed letter, addressed to Maréchal pétain on his birthday, from
+               the war prisoners of the Oflag XIII A. Unsigned copy.</figDesc>
+            <graphic xml:id="DSCF8351_object" url="DSCF8351.tiff"/>
+            <graphic xml:id="DSCF8351crop_full" url="DSCF8351crop.png"/>
+            <graphic xml:id="DSCF8351crop_thumb" url="DSCF8351crop_thumb.jpeg"/>
+         </figure>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div type="prose" hand="#JJ">
+            <pb facs="#DSCF8374"/>
+            <!-- In this letter, the year seems to have retrospectively been added to dates/time periods. The year is written in pencil but in bold.
+               As confirmation that the year dates were added after the fact is that although the letter is dated 1941-03-20, a date (rendered in bold) indicates 'until 1941-07-27.'
+            I have rendered this editorial change with the add element-->
+            <opener>
+               <date when="1941-03-20" rend="right">Le 20 mars 1941</date>
+               <persName ref="#JJ" rend="left"> Le <w>caporal </w>
+                  <w>infirmier</w>
+                  <surname rend="allcaps" style="big">Jouzel</surname>
+                  <forename rend="allcaps" style="small">Joseph,</forename>
+               </persName><lb/>
+               <affiliation rend="indent">numéro<num corresp="#personJJ">4526</num>, Block <num
+                     type="ordinal" value="3">III</num>.</affiliation><lb/>
+               <salute rend="indent">A monsieur le <w xml:lang="fr">Commandant</w> de l'<placeName
+                     xml:lang="de">Oflag <lb/>
+                     <num type="ordinal" value="13">XIII</num> A. Unterlager A.</placeName></salute>
+            </opener>
+            <p><add place="margin">Objet: Perception de la <w>solde</w>
+               d'<w>infirmier</w>.</add></p>
+            <p rend="indent">J’ai l’honneur de solliciter de<lb/> votre bienveillance de vouloir
+               bien payer<lb/> ma solde d’infirmier.</p>
+            <p rend="indent">En effet, bien que reconnu comme<lb/> Sanitaire par les <w>Autorités
+                  Militaires</w><lb/> Allemandes, je certifie n’avoir encore<lb/> perçu <emph
+                  rend="underlined">aucune solde d’aucune sorte</emph> depuis<lb/> que je suis
+               prisonnier, alors que des<lb/>
+               <w>Sanitaires</w>, dans le même cas que le mien,<lb/> perçoivent <num value="1"
+                  >un</num><measure type="currency"><w>mark</w></measure> par jour.</p>
+            <p>Voici à titre documentaire, mes dif<lb/>férentes <w>affectations</w>, depuis le <date
+                  when="1940-06-17">17 juin 1940</date><lb/> ,date à laquelle j’ai été fait
+               prison-<lb/>nier à <placeName>Vitteaux (Côte-d’Or)</placeName>: </p>
+            <p>Affecté à l’<w>Hôpital</w> d'<placeName>
+                  <settlement>Avallon</settlement>
+                  <region>(Yonne)</region></placeName>, comme <w>infirmier</w> à la <w>salle
+                  d’opérations</w>, du<lb/>
+               <date when="--06-17">17 juin</date> au<date when="--07-19">19 juillet</date><add
+                  rend="bold"><date>1940</date></add>
+            </p>
+            <p>
+               <w>Interné</w> au camp de
+                     <placeName><settlement>Cravant</settlement><region>(Yonne)</region></placeName>,
+               du <date when="--07-19">19 juillet</date> au <date when="--10-22">22
+                  octobre</date><add rend="bold"><date>1940</date></add>
+            </p>
+            <p>
+               <w>Interné</w> au camp de
+                     <placeName><settlement>Saint-Florentin</settlement><region>(Yonne)</region></placeName>,
+                  <orgName ref="#FS"><w>Frontstalag</w>
+                  <num type="cardinal">150</num></orgName>, du <date when="--10-22">22
+                  octobre</date> au <date when="--10-29">29 octobre</date><add rend="bold"><date
+                     when="1940">1940</date></add>
+            </p>
+            <p>Dirigé sur l’<placeName><country>Allemagne</country></placeName>le <date
+                  when="--10-29">29 octobre</date> :</p>
+            <p>A <placeName><settlement xml:lang="de">Grafenwöhr</settlement></placeName>, du <date
+                  from="--11-01" to="--11-07"><num type="ordinal"><abbr>1er</abbr></num> au 7
+                  novembre</date><add rend="bold"><date when="1940">1940</date></add></p>
+            <p>A <placeName><settlement>Eger</settlement></placeName>
+               <orgName type="acronym" ref="#AK"><w>(A.K. 34-31)</w></orgName>, du <date>7</date> au
+                  <date when="--11-27">27 novembre</date></p>
+            <p>A <placeName><settlement>Weiden</settlement></placeName>
+               <orgName ref="#ST"><w>(Stalag XIII B)</w></orgName>, du <date when="--11-27">27
+                  novembre</date> au <date when="1941-01-11">11 janvier 194 <emph style="bold"
+                     >1</emph></date></p>
+            <p>A <placeName><settlement>Nüruberg</settlement></placeName>
+               <orgName ref="#OF"><w>(Oflag XIII A, Unterlager A)</w></orgName>, à partir du <date
+                  when="1941-01-11">11 Janvier <del rend="overstrike">1941</del></date>. <add
+                  rend="bold"> jusqu'au <date when="1941-07-23">23 juillet 1941.</date></add></p>
+         </div>
+         <div type="prose" hand="#JJ">
+            <pb facs="#DSCF8370"/>
+            <opener>
+               <persName ref="#JJ" rend="left"><w>Caporal</w>
+                  <w>infirmier</w>
+                  <forename>Joseph</forename>
+                  <surname>Jouzel</surname>
+               </persName><lb/>
+               <affiliation rend="left"><abbr>No</abbr>:<num corresp="#personJJ"
+                  >4526</num></affiliation><lb/>
+               <affiliation rend="left">Block III</affiliation><lb/>
+               <date when="1941-04-30" rend="right">Le 30 avril 1941</date>
+               <salute>A monsieur le <w xml:lang="fr">Commandant</w> de l'<placeName xml:lang="de"
+                     >Oflag <num type="ordinal" value="13">XIII</num> A</placeName></salute>
+               <add place="margin" style="transform:rotate(-45deg)" rend="underlined">Non
+                  expédié</add>
+            </opener>
+
+            <p>J’ai l’honneur de solliciter de votre <lb/>bienveillance de bien vouloir me rendre
+               mon <w>livret <lb/>individuel</w> que je vous ai remis le 26 mars, à la <lb/>suite
+               d’une réclamation concernant ma solde <lb/>d’<w>infirmier</w> – réclamation restée
+               d’ailleurs <lb/>sans réponse. Ce livret contient ne effet toutes <lb/>les pièces
+               prouvant ma qualité de <w>sanitaire</w>
+               <lb/>et je ne peux m’en <sic>désaisir</sic>.</p>
+
+            <p>A ce propos, je me permets de vous rap- <lb/>peler que vous avez déjà eu ce
+                  <w>livret</w> en votre <lb/> possession, du 10 au 22 février, date <lb/>à laquelle
+               la <w xml:lang="de">kommandantur</w> m’avait recon- <lb/>nu comme sanitaire. <pb
+                  facs="#DSCF8371"/> De plus, le 24 fé- <lb/>vrier, le médecin militaire allemand,
+               que j’a- <lb/>vais vu à l’infirmerie, m’avait également <lb/>inscrit comme
+               sanitaire.</p>
+
+            <p>D’autre part, le <title resp="#TU" rend="quote">Trait d’Union</title> du <lb/>24
+               avril publie le texte de l’accord interve- <lb/>nu entre les autorités militaires
+               allemandes <lb/>et m. l’Ambassadeur <persName>Scapini</persName>: <add place="above"
+                  >Au 6e paragraphe il est dit</add><q resp="#TU" rend="quote"> Afin de <lb/>
+                  compléter l’assistance sanitaire des prison- <lb/>niers de guerre, il est fait
+                  appel aux mem-<lb/> bres du service sanitaire de l’armée <lb/>française. Le
+                  personnel sanitaire qui ne <lb/>sera pas utilisé à cet effet sera bientôt
+                  <lb/>libéré et renvoyé en France.</q>
+            </p>
+            <p>Or, depuis mon arrivée en Allemagne, <lb/> le <date when="1940-11-01">1er novembre
+                  1940</date>, je n’ai jamais été <lb/>employé en tant que sanitaire : par
+               <lb/>conséquent, ce paragraphe me concerne <lb/>particulièrement. C’est d’ailleurs,
+               en vertu <lb/>de cet accord, que des infirmiers de mon <lb/>groupe sanitaire
+               divisionnaire ont été <lb/>libérés dans le courant du mois de février. <lb/></p>
+            <closer>
+               <salute>Je vous serais donc très reconnaissant <lb/>de bien vouloir prendre en
+                  considération <lb/>ma situation présente.</salute><lb/>
+               <signed corresp="#personJJ" rend="right">J jouzel</signed>
+            </closer>
+         </div>
+         <div type="prose" hand="#JJ">
+            <pb facs="#DSCF8366-1"/>
+            <opener>
+               <persName ref="#JJ" rend="left"><w>Caporal</w>
+                  <w>infirmier</w>
+                  <surname style="allcaps" rend="first">Jouzel</surname>
+                  <!-- I have encountered 2 issues: JOUZEL is in all caps but I have tried rend:allcaps and style: allcaps without any success. Why? The other issue is thta in that letter the author writes his surnmae first. However even If I wrore the surname first it comes automatically second when I check the XHTML file. Why? How could I override this?  -->
+                  <forename rend="second">Joseph</forename>
+               </persName><lb/>
+               <affiliation rend="left">
+                  <abbr>no</abbr>
+                  <w>matricule</w>
+                  <num corresp="#personJJ">4526</num> 4526</affiliation><lb/>
+               <affiliation rend="left">Block III</affiliation><lb/>
+               <date when="1941-04-30" rend="right">Le 30 avril 1941</date><lb/>
+               <salute>A monsieur le <w xml:lang="fr">Commandant</w> de l'<placeName xml:lang="de"
+                     >Oflag <num type="ordinal" value="13">XIII</num> A</placeName>
+               </salute>
+            </opener>
+            <p><add place="margin">Objet: Réclamation de <w>livret individuel</w>.</add> J’ai
+               l’honneur de rappeler à <lb/> votre bienveillante attention que mon <w>livret
+                  indi-<lb/>viduel</w> vous a été remis le 26 mars, à la suite<lb/> d’une
+               réclamation concernant ma solde d’<w>in-<lb/>firmier</w>. Si cela est possible, je
+               serais dési-<lb/>reux de rentrer en sa possession, car il con-<lb/>tient toutes les
+               pièces prouvant ma qualité<lb/> de <w>Sanitaire</w>.</p>
+            <p>A ce propos, je me permets de vous<lb/> rappeler que vous avez déjà eu ce livret<lb/>
+               en votre possession, du 20 au 22 février,<lb/> date à laquelle la <w xml:lang="de"
+                  >Kommandantur</w> m’a-<lb/>vait reconnu comme <w>Sanitaire</w>. De plus<lb/> le 24
+               février, le médecin militaire alle-<lb/>mand, que j’avais vu à l’infirmerie,<lb/>
+               m’avait également inscrit comme<lb/>
+               <w>Sanitaire</w>.</p>
+            <pb facs="#DSCF8367"/>
+            <p>C’est pourquoi, j’exprime à nouveau<lb/> mon respectueux étonnement de n’avoir
+               pas<lb/> encore été payé comme <w>infirmier</w>, alors<lb/> que les autres
+               Sanitaires, qui se trouvent<lb/> dans mon cas, perçoivent depuis longtemps<lb/> un
+               mark par jour.</p>
+            <closer>
+               <signed corresp="#personJJ" rend="right">J Jouzel</signed>
+            </closer>
+            <postscript>
+               <p>Extrait de <title resp="#PS" rend="quote">Paris-Soir</title>, du <date
+                     when="1941-04-26">26/4/41</date>,</p>
+               <lb/>
+               <p rend="underlined"><placeName>Berlin</placeName>, <date when="1941-04-20">20
+                     avril</date></p>
+               <lb/>
+               <q rend="quote">Les autorités militaires ont décidé que<lb/> les <w>Prêtres</w>
+                  français prisonniers en Allemagne, ne seront<lb/> plus employés qu’à
+                     l’<w>assistance religieuse</w> de leurs ca-<lb/>marades. Ils pourront
+                  également, s’ils y consentent,<lb/> être utilisés comme interprètes. Ils ne seront
+                  sou-<lb/>mis au travail manuel que s’ils en expriment le<lb/> désir.</q>
+            </postscript>
+         </div>
+         <div type="prose" hand="#JJ">
+            <pb facs="#DSCF8383"/>
+            <opener>
+               <date when="1941-04-30" rend="right">Le 30 avril 1941</date><lb/>
+               <persName ref="#JJ" rend="left"><w>Caporal</w>
+                  <w>infirmier</w>
+                  <surname rend="allcaps" style="big">Jouzel</surname>
+                  <forename rend="allcaps" style="small">Joseph</forename>
+               </persName><lb/>
+               <affiliation rend="left"><abbr>No</abbr>:<num corresp="#personJJ"
+                  >4526</num></affiliation><lb/>
+               <affiliation rend="left">Block III</affiliation><lb/>
+               <salute>A monsieur le <w xml:lang="fr">Commandant</w> de l'<placeName xml:lang="de"
+                     >Oflag <num type="ordinal" value="13">XIII</num> A</placeName></salute>
+               <lb/>
+            </opener>
+            <p rend="indent"> J’ai l’honneur de solliciter de votre<lb/> bienveillance de bien
+               vouloir me rendre mon livret<lb/> individuel que je vous ai remis le 26 mars, à
+               la<lb/> suite d’une réclamation concernant ma solde<lb/> d’infirmier – réclamation
+               restée d’ailleurs sans<lb/> réponse. Ce livret contient en effet toutes les<lb/>
+               pièces prouvant ma qualité de sanitaire et je<lb/> ne peux m’en
+               <sic>désaisir</sic>.</p>
+            <p rend="indent"> A ce propos, je me permets de vous<lb/> rappeler que vous avez déjà eu
+               ce livret en votre<lb/> possession, du 10 au 22 février, date à laquelle<lb/> la
+               Kommandatur m’avait reconnu comme<lb/> sanitaire. De plus, le 24 février, le
+               médecin<lb/> militaire allemand, que j’avais vu à l’infirme-<lb/>rie, m’avait
+               également inscrit comme sanitaire.</p>
+            <p rend="indent">D’autre part, le <title resp="#TU" rend="quote">Trait
+               d’Union</title><lb/> du <date when="--04-24">24 avril</date> publie le texte de
+               l’accord<lb/> intervenu entre les autorités militaires alle-<lb/>mandes et m.
+               l’Ambassadeur Scapini. Au<pb facs="#DSCF8384"/> paragraphe sixième il est dit : <q
+                  resp="#TU" rend="quote">« Afin de<lb/> compléter l’assistance sanitaire des
+                  prisonniers<lb/> de guerre, il est fait appel aux membres du<lb/> Service
+                  sanitaire de l’armée française. Le <lb/>personnel sanitaire qui ne sera pas
+                  utilisé à<lb/> cet effet sera bientôt libéré et renvoyé en France. »</q></p>
+            <p rend="indent">Or depuis mon arrivée en -<lb/>, le <date when="1940-11-01">1er
+                  novembre 1940</date>, je n’ai jamais été<lb/> employé en tant que sanitaire : par
+               conséquent,<lb/> ce paragraphe me concerne particulièrement.<lb/> C’est d’ailleurs,
+               en vertu de cet accord, que<lb/> des infirmiers de mon groupe sanitaire
+               divi-<lb/>sionnaire ont été libérés dans le courant du<lb/> mois de février.</p>
+            <closer>
+               <salute>Je vous serais donc très reconnaissant<lb/> de bien vouloir prendre en
+                  considération ma si-<lb/>tuation présente.</salute>
+               <signed corresp="#personJJ" rend="right">jJouzel</signed>
+            </closer>
+         </div>
+         <div type="prose" style="printed">
+            <pb facs="#DSCF8350"/>
+            <opener>
+               <salute>Au MARECHAL PETAIN <lb/> Chef de I’Etat Français</salute>
+            </opener>
+            <p rend="allcaps">LES PRISONNIERS DE GUERRE DU M.-STAMM-<lb/> LAGER XIII A ADRESSENT AU
+               MARECHAL PE-<lb/> TAIN LEURS VOEUX TRES RESPECTUEUX A<lb/> L'OCCASION DE SON
+               ANNIVERSAIRE. </p>
+            <p rend="allcaps">ILS LUI EXPRIMENT LEUR RECONNAISSANCE<lb/> EMUE POUR LA GENEREUSE
+               ATTENTION QU’IL<lb/> LEUR TEMOIGNE EN TOUTE CIRCONSTANCE<lb/> ET POUR TOUS SES
+               EFFORTS EN VUE D’ADOU-<lb/> CIR, MORALEMENT ET MATERIELLEMENT, LEUR<lb/> CAPTIVITE. </p>
+            <p>GARDANT UNE CONFIANCE INEBRANLABLE<lb/> DANS LES DESTINEES DE LA FRANCE ETER-<lb/>
+               NELLE, ILS L’ASSURENT DE LEUR FILIAL AT-<lb/> TACHEMENT. </p>
+            <closer>
+               <signed rend="bold"><w>M.-STAMMLAGER XIIIA</w>M.-STAMMLAGER
+                     XIIIA<lb/><w>Arbeits-Kommando</w>
+                  <abbr>No. .............</abbr></signed>
+               <signed><table cols="4" rows="20">
+                     <row role="label">
+                        <cell>SIGNATURES</cell>
+                     </row>
+                     <row role="label">
+                        <cell>PRENOMS</cell>
+                     </row>
+                     <row role="label">
+                        <cell>PROFESSIONS</cell>
+                     </row>
+                     <row role="label">
+                        <cell>VILLES</cell>
+                     </row>
+                  </table></signed>
+            </closer>
+
+
+
+
+         </div>
+      </body>
+   </text>
+</TEI>
